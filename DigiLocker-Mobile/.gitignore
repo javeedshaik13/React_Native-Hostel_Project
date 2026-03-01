@@ -35,10 +35,9 @@ yarn-error.*
 .env*.local
 
 extensions.json
-package-lock.json
-yarn.lock
+
+
 yarn-error.log
-package.json
 tsconfig.json
 app.json
 eslint.config.js
