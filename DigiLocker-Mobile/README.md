@@ -1,50 +1,120 @@
-# Welcome to your Expo app 👋
+# DigiLocker Mobile - React Native App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A secure, modern document management mobile application built with React Native and Expo.
 
-## Get started
+## 🚀 Features
 
-1. Install dependencies
+- **Secure Document Storage**: Store and manage important documents securely
+- **Document Organization**: Categorize documents by type (ID, PDF, Images, Certificates)
+- **Quick Access**: Fast access to frequently used documents
+- **Search & Filter**: Powerful search and filtering capabilities
+- **Theme Support**: Dark mode and light mode with system preference sync
+- **Cloud Sync**: Automatic cloud synchronization for backups
+- **Profile Management**: Manage user profile and preferences
+- **Enhanced UI/UX**: Modern animations, smooth transitions, and polished interface
 
+## 📱 Tech Stack
+
+- **Framework**: React Native with Expo
+- **Navigation**: Expo Router (file-based routing)
+- **State Management**: Zustand
+- **Storage**: AsyncStorage
+- **Animations**: React Native Reanimated
+- **Styling**: StyleSheet with dynamic theming
+- **Icons**: Expo Vector Icons (Ionicons)
+
+## 🛠️ Setup & Installation
+
+1. **Install dependencies**
    ```bash
    npm install
    ```
 
-2. Start the app
-
+2. **Start the development server**
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+3. **Run on your device**
+   - Scan the QR code with Expo Go app (Android/iOS)
+   - Press `a` for Android emulator
+   - Press `i` for iOS simulator
+   - Press `w` for web browser
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 📁 Project Structure
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+DigiLocker-Mobile/
+├── app/                    # Expo Router screens
+│   ├── (app)/             # Authenticated screens
+│   ├── (auth)/            # Authentication screens
+│   └── _layout.jsx        # Root layout
+├── components/            # Reusable components
+│   └── ui/               # UI components (Toast, Modal, Buttons, etc.)
+├── store/                # Zustand state stores
+├── contexts/             # React contexts (Theme, etc.)
+├── constants/            # Constants and configurations
+├── utils/                # Utility functions
+└── assets/               # Images and fonts
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## ✨ UI Components
 
-## Learn more
+- **SuccessToast**: Animated toast notifications for user feedback
+- **ConfirmationModal**: Custom confirmation dialogs
+- **CustomButton**: Reusable button with variants (primary, cancel, secondary)
+- **ThemeToggle**: Theme switcher component
+- **QuickAccessSidebar**: Slide-in navigation panel
+- **AnimatedCard**: Press-to-scale card animation
 
-To learn more about developing your project with Expo, look at the following resources:
+## 🎨 Theming
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+The app supports three theme modes:
+- **Light Mode**: Clean, bright interface
+- **Dark Mode**: Comfortable dark interface
+- **System**: Follows system preference
 
-## Join the community
+Theme preference is automatically saved and persisted across app restarts.
 
-Join our community of developers creating universal apps.
+## 📚 Documentation
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- **ENHANCEMENTS.md**: Complete list of UI/UX enhancements
+- **ANIMATION_ENHANCEMENTS.md**: Animation implementation details
+- **QUICKSTART.md**: Quick reference guide
+
+## 🧪 Development Commands
+
+```bash
+# Start development server
+npx expo start
+
+# Clear cache and restart
+npx expo start --clear
+
+# Run on Android
+npx expo run:android
+
+# Run on iOS
+npx expo run:ios
+
+# Type checking
+npx tsc --noEmit
+```
+
+## 🔧 Environment Setup
+
+Make sure you have the following installed:
+- Node.js (v16 or higher)
+- npm or yarn
+- Expo CLI
+- Android Studio (for Android development)
+- Xcode (for iOS development, macOS only)
+
+## 📄 License
+
+This project is private and confidential.
+
+## 👥 Contributors
+
+Developed with ❤️ using React Native and Expo
+
